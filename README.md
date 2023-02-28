@@ -1,2 +1,2 @@
-# PSDpp
+# PSD++
 PSD++ Code
