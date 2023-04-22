@@ -21,7 +21,10 @@ set(SOURCES
     src/main.cpp)
 
 # Add the executable target for hello_world
-add_executable(hello_world ${SOURCES})
+add_executable(single_random_voronoi_cell ${SOURCES})
+
+# Add the VOROPP headers directory to the include path
+include_directories(${VOROPP_DIR}/include)
 
 # Link the hello_world target with the voropp library
-target_link_libraries(hello_world ${VOROPP_LIBRARY})
+target_link_libraries(single_random_voronoi_cell ${VOROPP_LIBRARY})
